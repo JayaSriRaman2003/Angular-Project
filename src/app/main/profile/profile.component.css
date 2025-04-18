@@ -1,0 +1,40 @@
+
+.tweet-container {
+    display: flex;
+    height: 400px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 0px auto;
+    padding: 20px;
+    background-color: #f5f8fa;
+    border-radius: 16px;
+}
+
+.tweet-form:hover{
+  transform: scale(1.1);
+  translate: 10px 5px;
+  box-shadow: -5px 5px 20px #1da1f2;
+  animation-delay: 5ms;
+}
+
+.tweet-form {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+
+.cont{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+
+.cont img{
+    margin-bottom: 20px;
+}

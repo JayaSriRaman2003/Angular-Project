@@ -1,0 +1,34 @@
+<div class="tweet-container chat-container">
+  <h2>Chat Room</h2>
+
+  <div class="chat-box">
+
+    <div class="chat-message incoming">
+      <div class="bubble">
+        <p>{{text1}}</p>
+        <span class="time">10:15 AM</span>
+      </div>
+    </div>
+
+
+    <div class="chat-message outgoing">
+      <div class="bubble">
+        <p>{{text2}}</p>
+        <span class="time">10:17 AM</span>
+      </div>
+    </div>
+
+    <div class="chat-message incoming">
+      <div class="bubble">
+        <p>{{text3}}</p>
+        <span class="time">10:18 AM</span>
+      </div>
+    </div>
+  </div>
+
+
+  <form [formGroup]="msgForm" (ngSubmit)="onSubmit()" class="chat-input">
+    <input type="text" formControlName="text" placeholder="Type your message..." />
+    <button type="submit">Send</button>
+  </form>
+</div>

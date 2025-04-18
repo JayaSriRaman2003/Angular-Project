@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main-block">
+        <img src="assets/twitter.png" alt="Twitter Logo" class="twt-logo" />
+      
+        <button class="common" type="button" >
+          Sign in with Google
+        </button>
+      
+        <div class="line">
+          <span>or</span>
+        </div>
+      
+        <form (ngSubmit)="onSubmit()" #registerForm="ngForm">
+          <input
+            id="r-user-name"
+            type="text"
+            class="user-data"
+            placeholder="email"
+            name="username"
+            required
+            [(ngModel)]="user.email"
+          />
+
+      
+          <input
+            id="r-user-pass"
+            type="password"
+            class="user-data"
+            placeholder="Password"
+            name="password"
+            required
+            [(ngModel)]="user.password"
+          />
+
+          <input
+            id="r-user-cpass"
+            type="password"
+            class="user-data"
+            placeholder="Confirm password"
+            name="confirmPassword"
+            required
+            [(ngModel)]="user.confirmPassword"
+          />
+      
+          <button type="submit" class="button-1">Register</button>
+        </form>
+      
+        <p class="txt">
+          Already have an account?
+          <a routerLink="/auth/login" class="txt-1">login</a>
+        </p>
+      </div>
+      
+</body>
+</html>

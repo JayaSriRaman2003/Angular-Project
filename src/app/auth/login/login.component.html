@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main-block">
+        <img src="assets/twitter.png" alt="Twitter Logo" class="twt-logo" />
+      
+        <button class="common">
+          Login in with Google
+        </button>
+      
+        <div class="line">
+          <span>or</span>
+        </div>
+      
+        <form (ngSubmit)="onLogin()" #loginForm="ngForm">
+          <input
+            id="l-user-name"
+            type="text"
+            class="user-data"
+            placeholder="Email"
+            name="email"
+            required
+            [(ngModel)]="email"
+          />
+      
+          <input
+            id="l-user-password"
+            type="password"
+            class="user-data"
+            placeholder="Password"
+            name="password"
+            required
+            [(ngModel)]="password"
+          />
+      
+          <button class="button-1" type="submit">Login</button>
+        </form>
+      
+        <button class="button-2" routerLink="/auth/forget-pass">Forgot password?</button>
+      
+        <p class="txt">
+          Don’t have an account?
+          <a routerLink="/auth/register" class="txt-1">Sign up</a>
+        </p>
+      </div>
+      
+</body>
+</html>

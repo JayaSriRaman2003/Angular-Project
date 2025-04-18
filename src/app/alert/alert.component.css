@@ -1,0 +1,33 @@
+.alert {
+    padding: 20px 20px;
+    margin: 20px 20px;
+    display: flex;
+    border-radius: 5px;
+    font-weight: bold;
+    position: absolute;
+    z-index: 10000;
+  }
+
+span{
+  align-items: center;
+  justify-content: center;
+}
+  
+  .success {
+    background-color: #ffffff;
+    color: #2dda55;
+    box-shadow: -10px 10px 10px #2dda55;
+  }
+  
+  .error {
+    background-color: #ffffff;
+    color: #eb2337;
+    box-shadow: -10px 10px 10px #eb2337;
+  }
+  
+  .info {
+    background-color: #ffffff;
+    color: #1dc4ee;
+    box-shadow: -10px 10px 10px #1dc4ee;
+  }
+  

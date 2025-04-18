@@ -1,0 +1,8 @@
+<div class="tweet-container">
+    <div class="tweet-card" *ngFor="let note of notifications">
+      <h3>{{ note.title }}</h3>
+      <img [src]="note.imageUrl" alt="user image" />
+      <p>{{ note.description }}</p>
+    </div>
+  </div>
+  

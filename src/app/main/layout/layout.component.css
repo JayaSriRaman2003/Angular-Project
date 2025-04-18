@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+  padding-top: 0px;
+}
+
+.flex-stuffs {
+  display: grid;
+  grid-template-columns: 300px auto;
+  gap: 10px;
+  max-width: 1200px;
+  margin: auto;
+  padding: 10px;
+}
+
+.side {
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.feeds {
+  border-left: 2px solid grey;
+  border-right: 2px solid grey;
+  height: 90vh;
+}
+
+.left-side {
+  display: flex;
+  flex-direction: column;
+}
+
+.twt-icon {
+  color: #1da1f2;
+  font-size: 50px;
+  position: fixed;
+  top: 40px;
+  left: 50px;
+}
+
+.icons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 125px;
+}
+
+.inner-icons {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.inner-icons i,
+.inner-icons span {
+  transition: all 0.3s ease;
+  font-size: 20px;
+  color: rgb(63, 63, 63);
+}
+
+.inner-icons span {
+  padding-left: 20px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Hover effect: grow + color change */
+.inner-icons:hover i,
+.inner-icons:hover span {
+  color: #1da1f2;
+  transform: scale(1.15);
+  cursor: pointer;
+}
+
+.logout-btn {
+  position: relative;
+  left: 9px;
+  padding: 8px 30px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 10px;
+  background-color: #1da1f2;
+  color: white;
+  font-weight: bold;
+}
+
+.logout-btn:hover {
+  transform: scale(1.15);
+  cursor: pointer;
+  box-shadow: -6px 6px 10px rgb(227, 227, 227);
+}
+
+.top-main {
+  display: flex;
+  flex-direction: column;
+}
+
+.top-inner1 {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
+  font-weight: bold;
+}
+
+.fa-hexagon-nodes-bolt {
+  color: #1da1f2;
+}
+
+.tweet {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.tweet-top {
+  background-color: #fff;
+  display: flex;
+  padding: 10px;
+  align-items: center;
+}
+
+.tweet-top i {
+  margin: 0 20px;
+  font-size: 30px;
+  color: rgb(132, 0, 255);
+}
+
+.tweet-bottom {
+  padding-left: 65px;
+  display: inline-flex;
+  justify-content: space-between;
+  margin-right: 30px;
+  margin-top: 10px;
+}
+
+.tweet-bottom i {
+  font-size: 20px;
+  padding: 3px 10px;
+  color: #1da1f2;
+}
+
+.twt-inner-btn {
+  position: relative;
+  left: 9px;
+  padding: 8px 25px;
+  border: none;
+  border-radius: 20px;
+  background-color: #1da1f2;
+  color: white;
+  font-weight: bold;
+}
+
+.tweet-holder {
+  border: none;
+  background-color: rgb(255, 255, 255);
+  border-radius: 30px;
+  width: 100%;
+  padding: 15px;
+  outline: none;
+  box-shadow: -5px 5px 5px #1da1f2;
+}
+
+.mid {
+  height: 100px;
+  width: 90%;
+  border-radius: 20px;
+  background-color: rgb(212, 212, 212);
+  margin: 50px 0 0 30px;
+  text-align: center;
+}
+
+.mid p {
+  margin-top: 40px;
+}
+
+.twt-inner-inner-btn {
+  padding: 8px;
+  margin: 20px 240px 0 240px;
+  border: none;
+  border-radius: 20px;
+  background-color: #1da1f2;
+  color: white;
+  font-weight: bold;
+}
+
+.right-side {
+  flex-direction: column;
+}
+
+.search-comp {
+  align-items: center;
+  margin-left: 10px;
+}

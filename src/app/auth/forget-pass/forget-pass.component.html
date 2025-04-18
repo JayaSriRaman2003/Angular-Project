@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main-block">
+        <img src="assets/twitter.png" alt="Twitter Logo" class="twt-logo" />
+      
+        <form (ngSubmit)="onForget()" #forgetForm="ngForm"  >
+          <input
+            id="l-user-name"
+            type="text"
+            class="user-data"
+            placeholder="Email"
+            name="email"
+            required [(ngModel)]="email"
+          />
+      
+          <input
+            id="l-user-password"
+            type="password"
+            class="user-data"
+            placeholder="New Password"
+            name="password"
+            required [(ngModel)]="newPassword"
+          />
+      
+          <button class="button-1" type="submit">Change Password</button>
+        </form>
+        <p class="txt">
+            Don’t Change
+            <a routerLink="/auth/login" class="txt-1">Login</a>
+          </p>
+      </div>
+      
+</body>
+</html>

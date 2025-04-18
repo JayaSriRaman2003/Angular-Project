@@ -1,0 +1,14 @@
+<h1>EXPLORE</h1>
+
+<div class="tweet-container">
+    <div class="tweet-form">
+        <div *ngIf="tweetData">
+            <h3>{{ tweetData.title }}</h3>
+            <img [src]="tweetData.imageUrl" alt="Tweet Image" style="max-width: 100%; border-radius: 10px;" />
+            <p>{{ tweetData.description }}</p>
+          </div>
+          
+      </div>
+    
+  </div>
+  

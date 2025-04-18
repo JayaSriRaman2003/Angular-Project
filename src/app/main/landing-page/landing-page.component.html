@@ -1,0 +1,27 @@
+<h1>HOME</h1>
+
+<div class="tweet-container">
+    <!-- Left: Form -->
+    <div class="tweet-form">
+      <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+        <label>Title:</label>
+        <input formControlName="title" />
+  
+        <label>Image URL:</label>
+        <input formControlName="imageUrl" />
+  
+        <label>Description:</label>
+        <textarea formControlName="description"></textarea>
+  
+        <button type="submit">Tweet</button>
+      </form>
+    </div>
+  
+    <!-- Right: Tweet Preview -->
+    <div class="tweet-card" *ngIf="tweetData">
+      <h3>{{ tweetData.title }}</h3>
+      <img [src]="tweetData.imageUrl" alt="Tweet Image" style="max-width: 100%; border-radius: 10px;" />
+      <p>{{ tweetData.description }}</p>
+    </div>
+  </div>
+  
